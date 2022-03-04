@@ -16,41 +16,34 @@ public class Atividade02Vetor {
 		Scanner entrada = new Scanner(System.in);
 		
 		int[] valor = new int [10];
-		int maiorValor = 0, media = 0, soma = 0, quantidadeMaiorResultado = 0;
-		
-		valor[0]= 1;
-		valor[1]= 8;
-		valor[2]= 3;
-		valor[3]= 9;
-		valor[4]= 5;
-		valor[5]= 6;
-		valor[6]= 3;
-		valor[7]= 0;
-		valor[8]= 5;
-		valor[9]= 6;
-		
+		int maiorValor = 0, soma = 0, quantidadeMaiorResultado = 0;
+		double media = 0;
+				
 			System.out.println("Os números que saíram nos dados foram: ");
+			
+			for(int i =0; i < 9; i++) {
+				System.out.println("Digite o " + (i+1)+ "º resultado do dado: ");
+				valor[i] = entrada.nextInt();
+					if (maiorValor < valor[i]) {
+						maiorValor = valor[i];
+					}
+			}
 			
 			for(int i = 0; i <= 9; i++) {
 				System.out.print(valor[i] + " | ");
-				soma += valor[i];
-				media = soma / 10;
-					if(valor[i] > maiorValor) {
-						maiorValor = valor[i];
-					}
-					
-					soma+=valor[i];
-				
-			for(i = 0; i <= 9; i++) {
+				soma+=valor[i];
 					if(maiorValor == valor[i]) {
 						quantidadeMaiorResultado += 1;
 					}
-			}
-			
-			System.out.println("\nA média dos valores do dado é de: " + media + ".\nJá o maior valor retirado no dado foi o número: " + maiorValor);
-			System.out.println("\nA quantidade de vezes que ela foi atingida foi " + quantidadeMaiorResultado);
 			
 			}
+			
+			media=soma/10;
+			
+			System.out.println("A maior pontuação foi: " + maiorValor);
+			System.out.println("A quantidade de vezes que ela foi atingida: " + quantidadeMaiorResultado);
+			System.out.println("A média dos resultados foi de: " + media);
+			
 				
 		
 			entrada.close();
