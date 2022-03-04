@@ -16,7 +16,7 @@ public class Atividade02Condicional {
 	       
 	        int a, b, c;
 	        
-	        System.out.println("Olá, me diga quatro números que te direi em ordem crescente\n");
+	        System.out.println("Olá, me diga três números que te direi em ordem crescente\n");
 	        
 	        System.out.println("Digite o primeiro número: ");
 			a = entrada.nextInt();
