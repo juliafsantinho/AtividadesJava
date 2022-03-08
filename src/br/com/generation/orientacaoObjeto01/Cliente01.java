@@ -10,7 +10,7 @@ DATA: 07/03/2022
 public class Cliente01 {
 
 	
-		//Atrivutos -> Variáveis
+		//Atributos -> Variáveis
 			String nome;
 			String CPF;
 			String endereço;
