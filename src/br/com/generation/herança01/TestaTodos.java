@@ -1,4 +1,4 @@
-package br.com.generation.herança01e02;
+package br.com.generation.herança01;
 /*
 EXERCICIO 01/02 HERANÇA
 JULIA FONSECA
